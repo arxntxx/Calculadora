@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Satoshi-Regular";
+    src: url('Fuentes/Satoshi-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Satoshi-Medium";
+    src: url('Fuentes/Satoshi-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url('Fuentes/Satoshi-Bold.ttf');
+}
+
+body {
+    font-family: "Satoshi-Bold";
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #5e5e5e;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.screen {
+    width: 350px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Satoshi-Regular";
+}
+
+.c,
+.power {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 18px;
+    font-family: "Satoshi-Bold";
+    align-items: flex-end;
+    margin-top: 20PX;
+}
+
+.power {
+    background-color: #00684e;
+    color: #ccc;
+}
+
+.btn,
+.operator {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 18px;
+    font-family: "Satoshi-Bold";
+}
+
+.operator {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.off {
+    background-color: #9b3131 !important;
+    color:#333;
+    cursor: not-allowed;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.keys input[type="button"] {
+    width: 100%;
+}

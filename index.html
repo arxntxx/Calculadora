@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="screen" value="" />
+        <input type="button" value="◉" class="power" onclick="onOff()"/>
+        <input type="button" value="C" class="c" onclick="borrar()"/>
+        
+
+        <div class="keys">
+            <input type="button" value="7" class="btn" onclick="numero(7)"/>
+            <input type="button" value="8" class="btn" onclick="numero(8)" />
+            <input type="button" value="9" class="btn"  onclick="numero(9)"/>
+
+            <input type="button" value="/" class="operator" onclick="dividir()" />
+            <input type="button" value="4" class="btn" onclick="numero(4)"/>
+            <input type="button" value="5" class="btn" onclick="numero(5)"/>
+            <input type="button" value="6" class="btn" onclick="numero(6)"/>
+
+            <input type="button" value="*" class="operator" onclick="multiplicar()"/>
+            <input type="button" value="1" class="btn" onclick="numero(1)"/>
+            <input type="button" value="2" class="btn" onclick="numero(2)"/>
+            <input type="button" value="3" class="btn" onclick="numero(3)"/>
+
+            <input type="button" value="-" class="operator" onclick="restar()"/>
+            <input type="button" value="0" class="btn" onclick="numero(0)"/>
+
+            <input type="button" value="." class="operator" onclick="decimal()"/>
+            <input type="button" value="√" class="operator" onclick="raizCuadrada()" />
+            <input type="button" value="+" class="operator" onclick="sumar()"/>
+
+            <input type="button" value="=" class="btn" onclick= "igual()"/>
+        </div>
+    </div>
+</body>
+</html>
